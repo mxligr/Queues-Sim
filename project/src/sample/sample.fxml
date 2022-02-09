@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Text layoutX="20.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Timer: " />
+      <Text layoutX="35.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number Of Clients: " />
+      <Text layoutX="35.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number Of Queues: " />
+      <Text layoutX="35.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Simulation Time: " />
+      <Text layoutX="35.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Arrival Time Interval: min: " />
+      <Text layoutX="230.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="max:" />
+      <Text layoutX="35.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Service Time Interval: min: " />
+      <Text layoutX="233.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="max:" />
+      <Button fx:id="startButton" layoutX="35.0" layoutY="210.0" mnemonicParsing="false" onAction="#startSimulation" text="Start Simulation" />
+      <TextField fx:id="clientsTextField" layoutX="150.0" layoutY="58.0" promptText="clients" />
+      <TextField fx:id="queuesTextField" layoutX="150.0" layoutY="88.0" promptText="queues" />
+      <TextField fx:id="simTimeTextField" layoutX="150.0" layoutY="118.0" promptText="simulation time" />
+      <TextField fx:id="ATMinTextField" layoutX="172.0" layoutY="148.0" prefHeight="26.0" prefWidth="45.0" promptText="AMin" />
+      <TextField fx:id="ATMaxTextField" layoutX="258.0" layoutY="148.0" prefHeight="26.0" prefWidth="45.0" promptText="AMax" />
+      <TextField fx:id="STMinTextField" layoutX="175.0" layoutY="178.0" prefHeight="26.0" prefWidth="45.0" promptText="SMin" />
+      <TextField fx:id="STMaxTextField" layoutX="261.0" layoutY="178.0" prefHeight="26.0" prefWidth="45.0" promptText="SMax" />
+      <Text fx:id="errorText" fill="RED" layoutX="35.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="265.1367301940918" />
+      <Text fx:id="timerText" layoutX="60.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fx:id="outputText" layoutX="50.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Output" wrappingWidth="650.13671875" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" />
+   </children>
+</AnchorPane>
